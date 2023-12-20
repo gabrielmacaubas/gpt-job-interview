@@ -11,7 +11,7 @@ class Job(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     requirements = models.TextField()
-    responsibilites = models.TextField()
+    responsibilities = models.TextField()
     level = models.CharField(max_length=2, choices=LEVEL_CHOICES)
     skills = models.ManyToManyField("jobs.Skill", related_name="jobs")
 
